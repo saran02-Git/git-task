@@ -1,19 +1,70 @@
-# Git Practice Task
+#Git Practice Task
 
-This repo is a simple hands-on practice of basic Git operations.
+This repository contains a hands-on Git practice task focused on core version control workflows such
+as repository setup, branching, merge, rebase, and stash operations.
 
-I created a local project, connected it to GitHub, and worked with branches to understand how version control actually works.
+Task Coverage
+• Created a new local working directory and added sample project files.
+• Initialized the local directory as a Git repository.
+• Created an empty repository on GitHub and linked the local repository to it.
+• Pushed the local project files to GitHub.
+• Performed merge, rebase, and stash operations.
+• Captured output screenshots for each major Git workflow step.
 
-What I did here:
-- Initialized a Git repository
-- Connected it to GitHub
-- Created a feature branch and merged it into main
-- Performed rebase to understand linear history
-- Used stash to temporarily save changes
+Repository Files
+• file1.txt
+• file2.txt
+• README.md
+• screenshots/
 
-The project has two sample files:
-- file1.txt  
-- file2.txt  
+Git Workflows Performed
+Repository Setup
+The following setup was completed:
 
-I’ve also added screenshots inside the `screenshots` folder to show the outputs for merge, rebase, and stash commands.
-This was mainly done to get comfortable with real Git workflows.
+git init
+git remote add origin <repository-url>
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
+Branching and Merge
+A feature branch was created, updated, and merged back into main.
+git checkout -b feature-branch
+
+# make changes
+git add .
+git commit -m "Feature branch changes"
+git checkout main
+git merge feature-branch
+
+Merge Conflict Handling
+A merge conflict was created intentionally and then resolved manually to understand conflict
+resolution.
+• screenshots/commit in feature branch.png
+• screenshots/commit in main.png
+• screenshots/Merge.png
+• screenshots/Conflict output.png
+• screenshots/Conflict resolved.png
+
+Rebase:
+Rebase was performed to understand linear commit history and branch integration.
+git checkout feature-branch
+git rebase main
+• screenshots/Rebase.png
+• screenshots/rebase output.png
+• screenshots/After rebase.png
+
+Stash:
+Stash was used to temporarily save local changes and reapply them later.
+git stash
+git stash list
+git stash apply
+
+git stash pop
+• screenshots/git stash apply.png
+• screenshots/Stashlistapply.png
+• screenshots/Git stash-list-pop.png
+
+Screenshots Included
+The screenshots folder contains command output evidence for merge, merge conflict creation and
+resolution, rebase, stash workflows, and push-related output handling.
