@@ -1,4 +1,4 @@
-#Git Practice Task
+# Git Practice Task
 
 This repository contains a hands-on Git practice task focused on core version control workflows such
 as repository setup, branching, merge, rebase, and stash operations.
@@ -31,7 +31,7 @@ Branching and Merge
 A feature branch was created, updated, and merged back into main.
 git checkout -b feature-branch
 
-# make changes
+make changes
 git add .
 git commit -m "Feature branch changes"
 git checkout main
